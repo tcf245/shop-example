@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Register</title>
+<title>Account</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -11,7 +11,7 @@
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Mihstore Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Amberegul Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--fonts-->
@@ -23,6 +23,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!--//slider-script-->
+
+
 <script src="js/simpleCart.min.js"> </script>
 </head>
 <body> 
@@ -194,7 +196,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</script>
 
 					<!---->
-				<div class="cart box_1">
+					<div class="cart box_1">
 						<a href="checkout.html">
 						<h3> <div class="total">
 							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
@@ -214,44 +216,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!---->
 <div class="container">
-	<h6 class="dress"><a href="index.html">Home</a> <i> </i> Register </h6>
+	<h6 class="dress"><a href="index.html">Home</a> <i> </i> Account </h6>
 </div>
 <div class="back">
-	<h2>REGISTER</h2>
+	<h2>ACCOUNT</h2>
 </div>
 		<!---->
 		<div class="container">
-		<div class="register">
-		<h3>PERSONAL INFORMATION</h3>
-		  	  <form> 
-				
-					
-					<div class="mation">
-					<div>
-						<span>First Name</span>
-						<input type="text"> 
-					</div>
-					<div>
-						<span>Last Name</span>
-						<input type="text"> 
-					 </div>
-					 <div>
-						 <span>Email Address</span>
-						 <input type="text">
-						 </div>
-						 <div>
-							<span>Password</span>
-								<input type="text">						 
-					</div>
-					 </div>
-				     <input type="submit" value="submit">
-				</form>
-				
-				
-		   </div>
+		<div class="account_grid">
+			   <div class=" login-right">
+			  	<h3>REGISTERED CUSTOMERS</h3>
+				<p>If you have an account with us, please log in.</p>
+				<form action="submitLogin" method="post" commandBean="guest">
+				  <div>
+					<span>Email Address</span>
+					<input name="email" type="text">
+				  </div>
+				  <div>
+					<span>Password</span>
+					<input name="password" type="text">
+				  </div>
+				  <a class="forgot" href="#">Forgot Your Password?</a>
+				  <input type="submit" value="Login">
+			    </form>
+			   </div>	
+			    <div class=" login-left">
+			  	 <h3>NEW CUSTOMERS</h3>
+				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+				 <a class="acount-btn" href="register">Create an Account</a>
+			   </div>
+			
+			 </div>
+		
 			</div>
 			<!---->
-					<div class="bottom-grid1">
+				<div class="bottom-grid1">
 					
 					<div class="fit1">
 						<h3>HAPPY SHOPPING</h3>

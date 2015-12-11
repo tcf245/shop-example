@@ -5,18 +5,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
-import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
-import org.thymeleaf.extras.springsecurity4.dialect.SpringSecurityDialect;
-import org.thymeleaf.spring4.SpringTemplateEngine;
-import org.thymeleaf.spring4.view.ThymeleafViewResolver;
-import org.thymeleaf.templateresolver.ITemplateResolver;
-import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
+import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
@@ -31,38 +26,42 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addRedirectViewController("/", "/index");
     }
-//    @Bean
-//    public ViewResolver viewResolver(){
-//        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-//    }
-
     @Bean
-    public ITemplateResolver templateResolver() {
-        ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver();
-        templateResolver.setPrefix("/WEB-INF/pages/");
-        templateResolver.setSuffix(".html");
-        templateResolver.setTemplateMode("HTML5");
-        templateResolver.setCharacterEncoding("utf-8");
-        templateResolver.setCacheable(false);
-        return templateResolver;
-    }
-
-    @Bean
-    public SpringTemplateEngine templateEngine(ITemplateResolver templateResolver, MessageSource messageSource) {
-        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-        templateEngine.setTemplateResolver(templateResolver);
-        templateEngine.setMessageSource(messageSource);
-//        templateEngine.addDialect(new SpringSecurityDialect());
-        return templateEngine;
-    }
-
-    @Bean
-    public ViewResolver springThymeleafViewResolver(SpringTemplateEngine templateEngine) {
-        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
-        viewResolver.setTemplateEngine(templateEngine);
-        viewResolver.setCharacterEncoding("utf-8");
+    public ViewResolver viewResolver(){
+        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+        viewResolver.setPrefix("/WEB-INF/pages/");
+        viewResolver.setSuffix(".jsp");
+        viewResolver.setViewClass(JstlView.class);
         return viewResolver;
     }
+
+//    @Bean
+//    public ITemplateResolver templateResolver() {
+//        ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver();
+//        templateResolver.setPrefix("/WEB-INF/pages/");
+//        templateResolver.setSuffix(".html");
+//        templateResolver.setTemplateMode("HTML5");
+//        templateResolver.setCharacterEncoding("utf-8");
+//        templateResolver.setCacheable(false);
+//        return templateResolver;
+//    }
+//
+//    @Bean
+//    public SpringTemplateEngine templateEngine(ITemplateResolver templateResolver, MessageSource messageSource) {
+//        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+//        templateEngine.setTemplateResolver(templateResolver);
+//        templateEngine.setMessageSource(messageSource);
+//        templateEngine.addDialect(new SpringSecurityDialect());
+//        return templateEngine;
+//    }
+//
+//    @Bean
+//    public ViewResolver springThymeleafViewResolver(SpringTemplateEngine templateEngine) {
+//        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+//        viewResolver.setTemplateEngine(templateEngine);
+//        viewResolver.setCharacterEncoding("utf-8");
+//        return viewResolver;
+//    }
 
     @Bean //TODO not used
     public MessageSource messageSource() {

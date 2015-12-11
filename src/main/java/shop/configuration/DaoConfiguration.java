@@ -12,6 +12,8 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import shop.dao.CartDao;
+import shop.dao.GuestDao;
 
 import javax.sql.DataSource;
 
@@ -21,6 +23,16 @@ import javax.sql.DataSource;
 public class DaoConfiguration {
     @Autowired
     private Environment environment;
+
+    @Bean
+    public CartDao cartDao(HibernateTemplate template){
+        return new CartDao(template);
+    }
+
+    @Bean
+    public GuestDao guestDao(HibernateTemplate template){
+        return new GuestDao(template);
+    }
 
 //    @Bean
 //    public UserDao userDao(HibernateTemplate template) {
@@ -69,14 +81,14 @@ public class DaoConfiguration {
         return dataSource;
     }
 
-    @Bean(destroyMethod = "shutdown", name = "dataSource")
-    @Profile("dev")
-    public DataSource devDataSource() {
-        return new EmbeddedDatabaseBuilder()
-                .setType(EmbeddedDatabaseType.H2)
-                .setName("devdb")
-                .build();
-    }
+//    @Bean(destroyMethod = "shutdown", name = "dataSource")
+//    @Profile("dev")
+//    public DataSource devDataSource() {
+//        return new EmbeddedDatabaseBuilder()
+//                .setType(EmbeddedDatabaseType.H2)
+//                .setName("devdb")
+//                .build();
+//    }
 
     @Bean
     public PlatformTransactionManager transactionManager(SessionFactory sessionFactory) {

@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 import shop.configuration.DaoConfiguration;
+import shop.configuration.ServiceConfiguration;
 import shop.configuration.WebConfiguration;
 //import shop.configuration.WebSecurityConfiguration;
 
@@ -13,7 +14,8 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class<?>[]{DaoConfiguration.class
-//                , WebSecurityConfiguration.class
+                ,DaoConfiguration.class
+                , ServiceConfiguration.class
         };
     }
 

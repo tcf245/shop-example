@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
 <html lang="zh-CN"
 xmlns="http://www.w3.org/1999/xhtml"
@@ -9,7 +10,7 @@ xmlns:th="http://www.thymeleaf.org">
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -52,8 +53,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li ><span ><i class="tele-in"> </i>0 462 261 61 61</span></li>			
 				</ul>
 				<ul class=" support-right">
-					<li ><a href="account.html" ><i class="men"> </i>Login</a></li>
-					<li ><a href="account.html" ><i class="tele"> </i>Create an Account</a></li>			
+					<li ><a href="login" ><i class="men"> </i>Login</a></li>
+					<li ><a href="register" ><i class="tele"> </i>Create an Account</a></li>
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
@@ -61,12 +62,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-bottom">
 			<div class="container">			
 				<div class="logo">
-					<h1><a href="index.html">Amberegul</a></h1>
+					<h1><a href="index.jsp">Amberegul</a></h1>
 				</div>
 				<div class="top-nav">
 				<!-- start header menu -->
 		<ul class="megamenu skyblue">
-			<li><a  href="index.html">Home</a></li>
+			<li><a  href="index.jsp">Home</a></li>
 			
 			<li class="active grid"><a  href="#">Pages</a>
 				<div class="megapanel">
@@ -75,10 +76,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="h_nav">
 								<h4>SUBMENU1</h4>
 								<ul>
-									<li><a href="about.html">About</a></li>
-									<li><a href="product.html">men</a></li>
-									<li><a href="product.html">women</a></li>
-									<li><a href="product.html">accessories</a></li>
+									<li><a href="about.jsp">About</a></li>
+									<li><a href="product.jsp">men</a></li>
+									<li><a href="product.jsp">women</a></li>
+									<li><a href="product.jsp">accessories</a></li>
 									
 								</ul>	
 							</div>							
@@ -87,12 +88,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="h_nav">
 								<h4>SUBMENU2</h4>
 								<ul>
-									<li><a href="product.html">trends</a></li>
-									<li><a href="product.html">sale</a></li>
-									<li><a href="product.html">style videos</a></li>
-									<li><a href="product.html">accessories</a></li>
-									<li><a href="product.html">kids</a></li>
-									<li><a href="product.html">style videos</a></li>
+									<li><a href="product.jsp">trends</a></li>
+									<li><a href="product.jsp">sale</a></li>
+									<li><a href="product.jsp">style videos</a></li>
+									<li><a href="product.jsp">accessories</a></li>
+									<li><a href="product.jsp">kids</a></li>
+									<li><a href="product.jsp">style videos</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -104,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					
     				</div>
 				</li>	
-		<li ><a  href="404.html">Blog</a></li>				
+		<li ><a  href="404.jsp">Blog</a></li>
 				<li><a  href="#">Products</a>
 				<div class="megapanel">
 					<div class="row">
@@ -113,7 +114,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<h4>BEST SELLING</h4>
 								<div class="sell">
 									<div class="men">
-										<a href="product.html"><img src="images/pi.jpg" alt="" ></a>
+										<a href="product.jsp"><img src="images/pi.jpg" alt="" ></a>
 									</div>
 									<div class="men-in">
 										<h6>Lorem Ipsum</h6>
@@ -123,7 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>	
 								<div class="sell">
 									<div class="men">
-										<a href="product.html"><img src="images/pi11.jpg" alt="" ></a>
+										<a href="product.jsp"><img src="images/pi11.jpg" alt="" ></a>
 									</div>
 									<div class="men-in">
 										<h6> Dummy Text</h6>
@@ -133,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>	
 								<div class="sell">
 									<div class="men">
-										<a href="product.html"><img src="images/pi12.jpg" alt="" ></a>
+										<a href="product.jsp"><img src="images/pi12.jpg" alt="" ></a>
 									</div>
 									<div class="men-in">
 										<h6>Standard Chunk</h6>
@@ -148,7 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<h4>TOP RATE</h4>
 								<div class="sell">
 									<div class="men">
-									<a href="product.html"><img src="images/pi13.jpg" alt="" ></a>
+									<a href="product.jsp"><img src="images/pi13.jpg" alt="" ></a>
 									</div>
 									<div class="men-in">
 										<h6> Perspiciatis Und</h6>
@@ -158,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>	
 								<div class="sell">
 									<div class="men">
-										<a href="product.html"><img src="images/pi.jpg" alt="" ></a>
+										<a href="product.jsp"><img src="images/pi.jpg" alt="" ></a>
 									</div>
 									<div class="men-in">
 										<h6>Veritatis Et</h6>
@@ -168,7 +169,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>	
 								<div class="sell">
 									<div class="men">
-										<a href="product.html"><img src="images/pi11.jpg" alt="" ></a>
+										<a href="product.jsp"><img src="images/pi11.jpg" alt="" ></a>
 									</div>
 									<div class="men-in">
 										<h6>Lorem Ipsum</h6>
@@ -182,7 +183,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     				</div>
 				</li>
 				
-				<li><a  href="contact.html">Contact</a>
+				<li><a  href="contact.jsp">Contact</a>
 					
 				</li>
 		 </ul> 
@@ -190,7 +191,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
 		 <div class="search-in" >
 			<div class="search" >
-						<form action="search.html">
+						<form action="search.jsp">
 							<input type="text" value="Keywords" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Keywords';}" class="text">
 							<input type="submit" value="SEARCH">
 						</form>
@@ -212,7 +213,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					<!---->
 					<div class="cart box_1">
-						<a href="checkout.html">
+						<a href="checkout.jsp">
 						<h3> <div class="total">
 							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
 							<img src="images/cart.png" alt=""/></h3>
@@ -239,7 +240,7 @@ women, accessories, etc.</span></p>
 </div>
 
 	<div class="now">
-	         <a class="morebtn" href="single.html">Explore</a>
+	         <a class="morebtn" href="single.jsp">Explore</a>
 	         <a class="morebtn at-in" href="single.html">Shop Now</a>
 	         <div class="clearfix"> </div>
 	         </div>
@@ -407,15 +408,15 @@ women, accessories, etc.</span></p>
 							    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
 									<div class="tab_img">
 									  <div class="img-top simpleCart_shelfItem">
-										
+
 					   		  			   <img src="images/pi9.jpg" class="img-responsive" alt=""/>
-											
+
 								              <div class="tab_desc">
 												 <ul class="round-top">
 												 	<li><a href="#"><i> </i></a></li>
 												 	<li><a href="#"><i class="round"> </i></a></li>
 												 </ul>
-												 
+
 												 <div class="agency ">
 													<div class="agency-left">
 														<h6 class="jean">BAJU JEANS</h6>
@@ -438,17 +439,17 @@ women, accessories, etc.</span></p>
 													</div>
 												 </div>
 											  </div>
-										
+
 										</div>
 										<div class="img-top simpleCart_shelfItem">
-										  
+
 					   		  			   <img src="images/pi8.jpg" class="img-responsive" alt=""/>
 											<div class="tab_desc">
 												 <ul class="round-top">
 												 	<li><a href="#"><i> </i></a></li>
 												 	<li><a href="#"><i class="round"> </i></a></li>
 												 </ul>
-												 
+
 												 <div class="agency ">
 													<div class="agency-left">
 														<h6 class="jean">BAJU JEANS</h6>
@@ -476,7 +477,7 @@ women, accessories, etc.</span></p>
 											  </div>
 											 </div>
 											  <div class="img-top simpleCart_shelfItem">
-										  
+
 					   		  			   <img src="images/pi10.jpg" class="img-responsive" alt=""/>
 											<div class="tab_desc">
 												 <ul class="round-top">
@@ -510,21 +511,21 @@ women, accessories, etc.</span></p>
 											  </div>
 											</div>
 											<div class="clearfix"></div>
-							     </div>	
-									 	        					 
+							     </div>
+
 						  </div>
-						    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+						        <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
 									<div class="tab_img">
 									  <div class="img-top simpleCart_shelfItem">
-										
+
 					   		  			   <img src="images/pi5.jpg" class="img-responsive" alt=""/>
-											
+
 								              <div class="tab_desc">
 												 <ul class="round-top">
 												 	<li><a href="#"><i> </i></a></li>
 												 	<li><a href="#"><i class="round"> </i></a></li>
 												 </ul>
-												 
+
 												 <div class="agency ">
 													<div class="agency-left">
 														<h6 class="jean">BAJU JEANS</h6>
@@ -547,17 +548,17 @@ women, accessories, etc.</span></p>
 													</div>
 												 </div>
 											  </div>
-										
+
 										</div>
 										<div class="img-top simpleCart_shelfItem">
-										  
+
 					   		  			   <img src="images/pi6.jpg" class="img-responsive" alt=""/>
 											<div class="tab_desc">
 												 <ul class="round-top">
 												 	<li><a href="#"><i> </i></a></li>
 												 	<li><a href="#"><i class="round"> </i></a></li>
 												 </ul>
-												 
+
 												 	<div class="agency ">
 													<div class="agency-left">
 														<h6 class="jean">BAJU JEANS</h6>
@@ -585,14 +586,14 @@ women, accessories, etc.</span></p>
 											  </div>
 											 </div>
 											  <div class="img-top simpleCart_shelfItem">
-										  
+
 					   		  			   <img src="images/pi7.jpg" class="img-responsive" alt=""/>
 											<div class="tab_desc">
 												 <ul class="round-top">
 												 	<li><a href="#"><i> </i></a></li>
 												 	<li><a href="#"><i class="round"> </i></a></li>
 												 </ul>
-												 
+
 												 	<div class="agency ">
 													<div class="agency-left">
 														<h6 class="jean">BAJU JEANS</h6>
@@ -620,9 +621,9 @@ women, accessories, etc.</span></p>
 											  </div>
 											</div>
 											<div class="clearfix"></div>
-							     </div>	
-									 	        					 
-						  </div>		
+							     </div>
+
+						  </div>
                   </div>
           </div>
          </div>

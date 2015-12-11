@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Account</title>
+<title>Checkout</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -22,7 +22,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-<!--//slider-script-->
 
 
 <script src="js/simpleCart.min.js"> </script>
@@ -216,39 +215,142 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!---->
 <div class="container">
-	<h6 class="dress"><a href="index.html">Home</a> <i> </i> Account </h6>
+	<h6 class="dress"><a href="index.html">Home</a> <i> </i> Checkout </h6>
 </div>
 <div class="back">
-	<h2>ACCOUNT</h2>
+	<h2>CHECKOUT</h2>
 </div>
 		<!---->
-		<div class="container">
-		<div class="account_grid">
-			   <div class=" login-right">
-			  	<h3>REGISTERED CUSTOMERS</h3>
-				<p>If you have an account with us, please log in.</p>
-				<form>
-				  <div>
-					<span>Email Address</span>
-					<input type="text"> 
-				  </div>
-				  <div>
-					<span>Password</span>
-					<input type="text"> 
-				  </div>
-				  <a class="forgot" href="#">Forgot Your Password?</a>
-				  <input type="submit" value="Login">
-			    </form>
-			   </div>	
-			    <div class=" login-left">
-			  	 <h3>NEW CUSTOMERS</h3>
-				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-				 <a class="acount-btn" href="register.html">Create an Account</a>
-			   </div>
-			
-			 </div>
-		
+		<div class="product">
+			<div class="container">
+				<div class="col-md-3 product-price">
+					  
+				
+				<!---->
+				<div class="product-bottom">
+					<div class="of-left-in">
+								<h3 class="best">BEST SELLERS</h3>
+							</div>
+					<div class="product-go">
+						<div class=" fashion-grid">
+									<a href="single.html"><img class="img-responsive " src="images/be.jpg" alt=""></a>
+									
+								</div>
+							<div class=" fashion-grid1">
+								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
+amet consectetuer  </a></h6>
+								
+								<span class=" price-in1"> $40.00</span>
+							</div>
+								
+							<div class="clearfix"> </div>
+							</div>
+							<div class="product-go">
+						<div class=" fashion-grid">
+									<a href="single.html"><img class="img-responsive " src="images/be1.jpg" alt=""></a>
+									
+								</div>
+							<div class="fashion-grid1">
+								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
+amet consectetuer </a></h6>
+								
+								<span class=" price-in1"> $40.00</span>
+							</div>
+								
+							<div class="clearfix"> </div>
+							</div>
+							<div class="product-go">
+						<div class=" fashion-grid">
+									<a href="single.html"><img class="img-responsive " src="images/be2.jpg" alt=""></a>
+									
+								</div>
+							<div class=" fashion-grid1">
+								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
+amet consectetuer </a></h6>
+								<ul class="star-footer">
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+								</ul>
+								<span class=" price-in1"><small>$70.00</small> $40.00</span>
+							</div>
+								
+							<div class="clearfix"> </div>
+							</div>
+				</div>
+<div class=" per1">
+				<a href="single.html"><img class="img-responsive" src="images/pro.jpg" alt="">
+				<div class="six1">
+					<h4>DISCOUNT</h4>
+					<p>Up to</p>
+					<span>60%</span>
+				</div></a>
 			</div>
+				</div>
+				<!---->
+				<div class="col-md-9 product-price1">
+				<div class="check-out">	 
+			
+		 <div class=" cart-items">
+			 <h3>My Shopping Bag (2)</h3>
+				<script>$(document).ready(function(c) {
+					$('.close1').on('click', function(c){
+						$('.cart-header').fadeOut('slow', function(c){
+							$('.cart-header').remove();
+						});
+						});	  
+					});
+			   </script>
+			<script>$(document).ready(function(c) {
+					$('.close2').on('click', function(c){
+						$('.cart-header1').fadeOut('slow', function(c){
+							$('.cart-header1').remove();
+						});
+						});	  
+					});
+			   </script>
+				
+				  <div class="in-check" >
+		  <ul class="unit">
+			<li><span>Item</span></li>
+			<li><span>Product Name</span></li>		
+			<li><span>Unit Price</span></li>
+			<li><span>Stock Status</span></li>
+			<li> </li>
+			<div class="clearfix"> </div>
+		  </ul>
+		  <ul class="cart-header">
+		   <div class="close1"> </div>
+			<li class="ring-in"><a href="single.html" ><img src="images/f1.jpg" class="img-responsive" alt=""></a>
+			</li>
+			<li><span>Woo Dress</span></li>
+			<li><span>$ 60.00</span></li>
+			<li><span>In Stock</span></li>
+			<li> <a href="single.html" class="add-cart cart-check">ADD TO CART</a></li>
+			<div class="clearfix"> </div>
+			</ul>
+ <ul class=" cart-header1">
+		   <div class="close2"> </div>
+			<li class="ring-in"><a href="single.html" ><img src="images/f2.jpg" class="img-responsive" alt=""></a>
+			</li>
+			<li><span>Woo Dress</span></li>
+			<li><span>$ 60.00</span></li>
+			<li><span>In Stock</span></li>
+			<li> <a href="single.html" class="add-cart cart-check">ADD TO CART</a></li>
+			<div class="clearfix"> </div>
+			</ul>
+		</div>
+			 </div>
+					  
+		 </div>
+		 
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
 			<!---->
 				<div class="bottom-grid1">
 					
