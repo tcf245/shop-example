@@ -23,18 +23,24 @@ public class GuestController {
     @Autowired
     private CartService cartService;
 
+    @RequestMapping(value = "/logout")
+    public String logout(HttpSession session){
+        session.invalidate();
+        return "redirect:/index";
+    }
+
     @RequestMapping(value = "/login")
     public String loginForm(Model model){
         Guest guest = new Guest();
-        model.addAttribute(guest);
+        model.addAttribute("guest",guest);
         return "account";
     }
     @RequestMapping(value = "/submitLogin",method = RequestMethod.POST)
     public String subLogin(Model model,Guest guest,HttpSession session){
-        Guest user = guestService.findGuest(guest);
+        Guest user = guestService.login(guest);
         if (user != null){
             session.setAttribute("guest",user);
-            return "index";
+            return "redirect:/index";
         }
         return "account";
     }
@@ -50,9 +56,10 @@ public class GuestController {
         }
         Cart cart = cartService.save(new Cart());
         guest.setCart(cart);
-        guestService.save(guest);
+        guest.setManager(false);
+        guestService.register(guest);
         session.setAttribute("guest",guest);
-        return "index";
+        return "redirect:/index";
     }
 
 

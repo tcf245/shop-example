@@ -1,7 +1,5 @@
 package shop.dao;
 
-import org.hibernate.Hibernate;
-import org.hibernate.Query;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.transaction.annotation.Transactional;
 import shop.domain.Guest;
@@ -21,12 +19,6 @@ public class GuestDao {
 
     @Transactional(readOnly = true)
     public Guest findGuest(Guest guest) {
-//        String findHQL = "from Guest where email= (:email) and password = (:password) ";
-//        Query query = template.getSessionFactory().getCurrentSession().createQuery(findHQL);
-//        query.setParameter("email",guest.getEmail());
-//        query.setParameter("password",guest.getPassword());
-//        return query.list() == null ? null: (Guest) query.list().get(0);
-
         List<Guest> guests = (List<Guest>) template.find("from Guest " +
                 "where email=? and password=?"
                 ,guest.getEmail(),guest.getPassword());

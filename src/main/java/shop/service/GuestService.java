@@ -13,11 +13,11 @@ public class GuestService {
         this.guestDao = guestDao;
     }
 
-    public Guest findGuest(Guest guest){
+    public Guest login(Guest guest){
         return guestDao.findGuest(guest);
     }
 
-    public void save(Guest guest){
+    public void register(Guest guest){
         guestDao.save(guest);
     }
 

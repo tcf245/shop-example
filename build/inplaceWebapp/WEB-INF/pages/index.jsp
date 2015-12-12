@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
 <html lang="zh-CN"
@@ -47,14 +48,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header-top">
 		<div class="container">
 			<div class="header-top-in">
-				
+
 				<ul class="support">
 					<li ><a href="mailto:info@example.com" ><i > </i>info@example.com</a></li>
 					<li ><span ><i class="tele-in"> </i>0 462 261 61 61</span></li>			
 				</ul>
 				<ul class=" support-right">
+					<c:if test="${guest != null}" >
+						<c:if test="${guest.manager} ">
+							<li ><a href="addGoods" ><i class="tele"> </i>Create Goods</a></li>
+						</c:if>
+
+						<li ><a href="addGoods" ><i class="tele"> </i>Create Goods</a></li>
+						<li ><a href="login" ><i class="men"> </i>${guest.email}</a></li>
+						<li ><a href="logout" ><i class="tele"> </i>Logout</a></li>
+
+					</c:if>
+
+					<c:if test="${guest == null}" >
 					<li ><a href="login" ><i class="men"> </i>Login</a></li>
 					<li ><a href="register" ><i class="tele"> </i>Create an Account</a></li>
+					</c:if>
+
+
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
@@ -106,7 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     				</div>
 				</li>	
 		<li ><a  href="404.jsp">Blog</a></li>
-				<li><a  href="#">Products</a>
+				<li><a  href="products">Products</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class=" col-nav">
@@ -149,7 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<h4>TOP RATE</h4>
 								<div class="sell">
 									<div class="men">
-									<a href="product.jsp"><img src="images/pi13.jpg" alt="" ></a>
+									<a href="single"><img src="images/pi13.jpg" alt="" ></a>
 									</div>
 									<div class="men-in">
 										<h6> Perspiciatis Und</h6>
@@ -215,13 +231,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="cart box_1">
 						<a href="checkout.jsp">
 						<h3> <div class="total">
-							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity">${guest.cart.goods.size()}</span> items)</div>
 							<img src="images/cart.png" alt=""/></h3>
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
 					</div>
-
 <div class="clearfix"> </div>
 					<!---->
 				</div>
@@ -297,53 +312,21 @@ women, accessories, etc.</span></p>
 							<div class="resp-tabs-container">
 							    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 									<div class="tab_img">
-									  <div class="img-top simpleCart_shelfItem">
-										
-					   		  			   <img src="images/pi2.jpg" class="img-responsive" alt=""/>
-											
-								              <div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
-												 
-												 	<div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
-													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
-										
-										</div>
+										<c:forEach items="${women}" var="goods" >
 										<div class="img-top simpleCart_shelfItem">
-										  
-					   		  			   <img src="images/pi3.jpg" class="img-responsive" alt=""/>
+
+											<img src="${goods.image}" class="img-responsive" alt=""/>
+
 											<div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
-												 
+												<ul class="round-top">
+													<li><a href="#"><i> </i></a></li>
+													<li><a href="#"><i class="round"> </i></a></li>
+												</ul>
+
 												<div class="agency ">
 													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
+														<h6 class="jean" th:value="${goods.goodsName}">BAJU JEANS</h6>
+														<span class="dollor item_price" th:value="${goods.price}">$50.00</span>
 														<div class="clearfix"> </div>
 													</div>
 													<div class="agency-right">
@@ -360,266 +343,103 @@ women, accessories, etc.</span></p>
 														</ul>
 														<div class="clearfix"> </div>
 													</div>
-												 </div>
-											  </div>
-											  <div class="col-in">
-											  	<p>NEW</p>
-											  </div>
-											 </div>
-											  <div class="img-top simpleCart_shelfItem">
-										  
-					   		  			   <img src="images/pi4.jpg" class="img-responsive" alt=""/>
-											<div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
-												 
-												 <div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
-													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
-											 <div class="col-in col-in-1">
-											  	<p>SALE <span>30%</span></p>
-											  </div>
+												</div>
 											</div>
+
+										</div>
+										</c:forEach>
+
+
 											<div class="clearfix"></div>
 							     </div>	
 									 	        					 
 						  </div>
 							    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
 									<div class="tab_img">
-									  <div class="img-top simpleCart_shelfItem">
 
-					   		  			   <img src="images/pi9.jpg" class="img-responsive" alt=""/>
+										<c:forEach items="${men}" var="goods" >
+											<div class="img-top simpleCart_shelfItem">
 
-								              <div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
+												<img src="${goods.image}" class="img-responsive" alt=""/>
 
-												 <div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
+												<div class="tab_desc">
+													<ul class="round-top">
+														<li><a href="#"><i> </i></a></li>
+														<li><a href="#"><i class="round"> </i></a></li>
+													</ul>
+
+													<div class="agency ">
+														<div class="agency-left">
+															<h6 class="jean" th:value="${goods.goodsName}">BAJU JEANS</h6>
+															<span class="dollor item_price" th:value="${goods.price}">$50.00</span>
+															<div class="clearfix"> </div>
+														</div>
+														<div class="agency-right">
+															<ul class="social">
+																<li><a href="#"><i class="item_add"> </i></a></li>
+																<li><a href="#"><i class="text"> </i></a></li>
+															</ul>
+															<ul class="social-in">
+																<li><a href="#"><i> </i></a></li>
+																<li><a href="#"><i > </i></a></li>
+																<li><a href="#"><i> </i></a></li>
+																<li><a href="#"><i > </i></a></li>
+																<li><a href="#"><i > </i></a></li>
+															</ul>
+															<div class="clearfix"> </div>
+														</div>
 													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
+												</div>
 
-										</div>
-										<div class="img-top simpleCart_shelfItem">
-
-					   		  			   <img src="images/pi8.jpg" class="img-responsive" alt=""/>
-											<div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
-
-												 <div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
-													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
-											  <div class="col-in">
-											  	<p>NEW</p>
-											  </div>
-											 </div>
-											  <div class="img-top simpleCart_shelfItem">
-
-					   		  			   <img src="images/pi10.jpg" class="img-responsive" alt=""/>
-											<div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
-												 <div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
-													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
-											 <div class="col-in col-in-1">
-											  	<p>SALE <span>30%</span></p>
-											  </div>
 											</div>
+										</c:forEach>
+
+
 											<div class="clearfix"></div>
 							     </div>
 
 						  </div>
 						        <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
 									<div class="tab_img">
-									  <div class="img-top simpleCart_shelfItem">
 
-					   		  			   <img src="images/pi5.jpg" class="img-responsive" alt=""/>
+										<c:forEach items="${shoes}" var="goods" >
+											<div class="img-top simpleCart_shelfItem">
 
-								              <div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
+												<img src="${goods.image}" class="img-responsive" alt=""/>
 
-												 <div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
+												<div class="tab_desc">
+													<ul class="round-top">
+														<li><a href="#"><i> </i></a></li>
+														<li><a href="#"><i class="round"> </i></a></li>
+													</ul>
+
+													<div class="agency ">
+														<div class="agency-left">
+															<h6 class="jean" th:value="${goods.goodsName}">BAJU JEANS</h6>
+															<span class="dollor item_price" th:value="${goods.price}">$50.00</span>
+															<div class="clearfix"> </div>
+														</div>
+														<div class="agency-right">
+															<ul class="social">
+																<li><a href="#"><i class="item_add"> </i></a></li>
+																<li><a href="#"><i class="text"> </i></a></li>
+															</ul>
+															<ul class="social-in">
+																<li><a href="#"><i> </i></a></li>
+																<li><a href="#"><i > </i></a></li>
+																<li><a href="#"><i> </i></a></li>
+																<li><a href="#"><i > </i></a></li>
+																<li><a href="#"><i > </i></a></li>
+															</ul>
+															<div class="clearfix"> </div>
+														</div>
 													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
+												</div>
 
-										</div>
-										<div class="img-top simpleCart_shelfItem">
-
-					   		  			   <img src="images/pi6.jpg" class="img-responsive" alt=""/>
-											<div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
-
-												 	<div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
-													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
-											  <div class="col-in">
-											  	<p>NEW</p>
-											  </div>
-											 </div>
-											  <div class="img-top simpleCart_shelfItem">
-
-					   		  			   <img src="images/pi7.jpg" class="img-responsive" alt=""/>
-											<div class="tab_desc">
-												 <ul class="round-top">
-												 	<li><a href="#"><i> </i></a></li>
-												 	<li><a href="#"><i class="round"> </i></a></li>
-												 </ul>
-
-												 	<div class="agency ">
-													<div class="agency-left">
-														<h6 class="jean">BAJU JEANS</h6>
-														<span class="dollor item_price">$50.00</span>
-														<div class="clearfix"> </div>
-													</div>
-													<div class="agency-right">
-														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
-														</ul>
-														<ul class="social-in">
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i> </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-															<li><a href="#"><i > </i></a></li>
-														</ul>
-														<div class="clearfix"> </div>
-													</div>
-												 </div>
-											  </div>
-											 <div class="col-in col-in-1">
-											  	<p>SALE <span>30%</span></p>
-											  </div>
 											</div>
+										</c:forEach>
+
+
 											<div class="clearfix"></div>
 							     </div>
 

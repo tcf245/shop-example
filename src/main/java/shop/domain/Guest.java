@@ -15,6 +15,7 @@ public class Guest {
     private String lastName;
     private String email;
     private String password;
+    private boolean manager;
 
     @OneToOne(fetch = FetchType.EAGER)
     private Cart cart;
@@ -65,5 +66,13 @@ public class Guest {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public boolean isManager() {
+        return manager;
+    }
+
+    public void setManager(boolean manager) {
+        this.manager = manager;
     }
 }

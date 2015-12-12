@@ -5,14 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
-import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import shop.dao.CartDao;
+import shop.dao.GoodsDao;
 import shop.dao.GuestDao;
 
 import javax.sql.DataSource;
@@ -23,6 +23,16 @@ import javax.sql.DataSource;
 public class DaoConfiguration {
     @Autowired
     private Environment environment;
+
+    @Bean
+    public CommonsMultipartResolver multipartResolver(){
+        return new CommonsMultipartResolver();
+    }
+
+    @Bean
+    public GoodsDao goodsDao(HibernateTemplate template){
+        return new GoodsDao(template);
+    }
 
     @Bean
     public CartDao cartDao(HibernateTemplate template){

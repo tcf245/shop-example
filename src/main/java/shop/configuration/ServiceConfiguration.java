@@ -3,8 +3,10 @@ package shop.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import shop.dao.CartDao;
+import shop.dao.GoodsDao;
 import shop.dao.GuestDao;
 import shop.service.CartService;
+import shop.service.GoodsService;
 import shop.service.GuestService;
 
 /**
@@ -12,6 +14,12 @@ import shop.service.GuestService;
  */
 @Configuration
 public class ServiceConfiguration {
+
+    @Bean
+    public GoodsService goodsService(GoodsDao goodsDao){
+        return new GoodsService(goodsDao);
+    }
+
     @Bean
     public GuestService guestService(GuestDao guestDao){
         return new GuestService(guestDao);
