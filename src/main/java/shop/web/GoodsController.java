@@ -40,7 +40,7 @@ public class GoodsController {
         model.addAttribute("list",goodsService.findAll());
         return "product";
     }
-    @RequestMapping(value="/product/{id}")
+    @RequestMapping(value="/{id}")
     public String singleGoods(Model model,@PathVariable("id") int id){
         model.addAttribute("goods",goodsService.findById(id));
         return "single";

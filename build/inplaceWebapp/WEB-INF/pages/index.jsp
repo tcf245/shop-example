@@ -229,12 +229,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					<!---->
 					<div class="cart box_1">
-						<a href="checkout.jsp">
+						<a href="initCart">
 						<h3> <div class="total">
 							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity">${guest.cart.goods.size()}</span> items)</div>
 							<img src="images/cart.png" alt=""/></h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+						<p><a href="initCart" class="simpleCart_empty"> Cart</a></p>
 						<div class="clearfix"> </div>
 					</div>
 <div class="clearfix"> </div>
@@ -319,8 +319,8 @@ women, accessories, etc.</span></p>
 
 											<div class="tab_desc">
 												<ul class="round-top">
-													<li><a href="#"><i> </i></a></li>
-													<li><a href="#"><i class="round"> </i></a></li>
+													<li><a href="${goods.id}"><i> </i></a></li>
+													<li><a href="${goods.id}"><i class="round"> </i></a></li>
 												</ul>
 
 												<div class="agency ">
@@ -331,8 +331,8 @@ women, accessories, etc.</span></p>
 													</div>
 													<div class="agency-right">
 														<ul class="social">
-															<li><a href="#"><i class="item_add"> </i></a></li>
-															<li><a href="#"><i class="text"> </i></a></li>
+															<li><a href="${goods.id}"><i class="item_add"> </i></a></li>
+															<li><a href="${goods.id}"><i class="text"> </i></a></li>
 														</ul>
 														<ul class="social-in">
 															<li><a href="#"><i> </i></a></li>

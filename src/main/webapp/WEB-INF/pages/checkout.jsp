@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -294,7 +295,7 @@ amet consectetuer </a></h6>
 				<div class="check-out">	 
 			
 		 <div class=" cart-items">
-			 <h3>My Shopping Bag (2)</h3>
+			 <h3>My Shopping Bag (${cart.goods.size()})</h3>
 				<script>$(document).ready(function(c) {
 					$('.close1').on('click', function(c){
 						$('.cart-header').fadeOut('slow', function(c){
@@ -321,26 +322,29 @@ amet consectetuer </a></h6>
 			<li> </li>
 			<div class="clearfix"> </div>
 		  </ul>
-		  <ul class="cart-header">
+
+			<c:forEach items="${cart.goods}" var="goods">
+					  <ul class="cart-header">
 		   <div class="close1"> </div>
-			<li class="ring-in"><a href="single.html" ><img src="images/f1.jpg" class="img-responsive" alt=""></a>
+			<li class="ring-in"><a href="product/${goods.id}" ><img src="${goods.image}" class="img-responsive" alt=""></a>
 			</li>
-			<li><span>Woo Dress</span></li>
-			<li><span>$ 60.00</span></li>
+			<li><span>${goods.goodsName}</span></li>
+			<li><span>$ ${goods.price}</span></li>
 			<li><span>In Stock</span></li>
-			<li> <a href="single.html" class="add-cart cart-check">ADD TO CART</a></li>
+			<li> <a href="product/${goods.id}" class="add-cart cart-check">ADD TO CART</a></li>
 			<div class="clearfix"> </div>
 			</ul>
- <ul class=" cart-header1">
-		   <div class="close2"> </div>
-			<li class="ring-in"><a href="single.html" ><img src="images/f2.jpg" class="img-responsive" alt=""></a>
-			</li>
-			<li><span>Woo Dress</span></li>
-			<li><span>$ 60.00</span></li>
-			<li><span>In Stock</span></li>
-			<li> <a href="single.html" class="add-cart cart-check">ADD TO CART</a></li>
-			<div class="clearfix"> </div>
-			</ul>
+			</c:forEach>
+ <%--<ul class=" cart-header1">--%>
+		   <%--<div class="close2"> </div>--%>
+			<%--<li class="ring-in"><a href="single.html" ><img src="images/f2.jpg" class="img-responsive" alt=""></a>--%>
+			<%--</li>--%>
+			<%--<li><span>Woo Dress</span></li>--%>
+			<%--<li><span>$ 60.00</span></li>--%>
+			<%--<li><span>In Stock</span></li>--%>
+			<%--<li> <a href="single.html" class="add-cart cart-check">ADD TO CART</a></li>--%>
+			<%--<div class="clearfix"> </div>--%>
+			<%--</ul>--%>
 		</div>
 			 </div>
 					  

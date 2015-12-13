@@ -18,4 +18,8 @@ public class CartService {
         return cartDao.save(cart);
     }
 
+    public void updateCart(Cart cart){
+        cartDao.update(cart);
+    }
+
 }

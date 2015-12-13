@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
 <html>
 <head>
 <title>Single</title>
@@ -425,8 +425,8 @@ amet consectetuer </a></h6>
 						<ul id="etalage">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image img-responsive" src="images/si1.jpg" alt="" >
-									<img class="etalage_source_image img-responsive" src="images/si1.jpg" alt="" >
+									<img class="etalage_thumb_image img-responsive" src="${goods.image}" alt="" >
+									<img class="etalage_source_image img-responsive" src="${goods.image}" alt="" >
 								</a>
 							</li>
 							<li>
@@ -446,7 +446,7 @@ amet consectetuer </a></h6>
 					</div>	
 					<div class="col-md-7 single-top-in simpleCart_shelfItem">
 						<div class="single-para ">
-						<h4>Lorem Ipsum</h4>
+						<h4>${goods.goodsName}</h4>
 							<div class="star-on">
 								<ul class="star-footer">
 										<li><a href="#"><i> </i></a></li>
@@ -462,7 +462,7 @@ amet consectetuer </a></h6>
 							<div class="clearfix"> </div>
 							</div>
 							
-							<h5 class="item_price">$ 95.00</h5>
+							<h5 class="item_price">$ ${goods.price}</h5>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
 diam nonummy nibh euismod tincidunt ut laoreet dolore 
 magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
@@ -493,7 +493,7 @@ aliquip ex ea commodo consequat.</p>
 								<li><span>SKU</span>
 								<span class="women1">: CK09</span></li>
 							</ul>
-								<a href="#" class="add-cart item_add">ADD TO CART</a>
+								<a href="addToCart/${goods.id}" class="add-cart item_add">ADD TO CART</a>
 							
 						</div>
 					</div>

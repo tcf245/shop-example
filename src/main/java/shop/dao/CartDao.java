@@ -3,6 +3,7 @@ package shop.dao;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.transaction.annotation.Transactional;
 import shop.domain.Cart;
+import shop.domain.Goods;
 
 import java.util.List;
 
@@ -22,5 +23,8 @@ public class CartDao {
         template.save(cart);
         List<Cart> carts = (List<Cart>) template.find("from Cart Order by id  DESC");
         return carts.isEmpty() ? null : carts.get(0);
+    }
+    public void update(Cart cart){
+        template.update(cart);
     }
 }
