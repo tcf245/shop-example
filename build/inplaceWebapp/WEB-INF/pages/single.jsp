@@ -1,5 +1,7 @@
+<%@ include file="/WEB-INF/pages/fragments.jsp"%>
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
-<html>
+<html  xmlns="http://www.w3.org/1999/xhtml"
+	   xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Single</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -62,191 +64,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/simpleCart.min.js"> </script>
 </head>
 <body> 
-<!--header-->	
-<div class=" header-product">
-	<div class="header-top com">
-		<div class="container">
-			<div class="header-top-in grid-1">
-				<ul class="support">
-					<li ><a href="mailto:info@example.com" ><i > </i>info@example.com</a></li>
-					<li ><span ><i class="tele-in"> </i>0 462 261 61 61</span></li>			
-				</ul>
-				<ul class=" support-right">
-					<li ><a href="account.html" ><i class="men"> </i>Login</a></li>
-					<li ><a href="account.html" ><i class="tele"> </i>Create an Account</a></li>			
-				</ul>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-			<div class="header-bottom bottom-com">
-			<div class="container">			
-				<div class="logo">
-					<h1><a href="index.html">Amberegul</a></h1>
-				</div>
-				<div class="top-nav">
-				<!-- start header menu -->
-		<ul class="megamenu skyblue menu-in">
-	<li><a  href="index.html">Home</a></li>
-			
-			<li class="active grid"><a  href="#">Pages</a>
-				<div class="megapanel">
-					<div class="row">
-						<div class="col1">
-							<div class="h_nav">
-								<h4>SUBMENU1</h4>
-								<ul>
-									<li><a href="about.html">About</a></li>
-									<li><a href="product.html">men</a></li>
-									<li><a href="product.html">women</a></li>
-									<li><a href="product.html">accessories</a></li>
-									
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>SUBMENU2</h4>
-								<ul>
-									<li><a href="product.html">trends</a></li>
-									<li><a href="product.html">sale</a></li>
-									<li><a href="product.html">style videos</a></li>
-									<li><a href="product.html">accessories</a></li>
-									<li><a href="product.html">kids</a></li>
-									<li><a href="product.html">style videos</a></li>
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1 col5">
-							<iframe src="https://player.vimeo.com/video/10777111?color=ffffff&title=0&byline=0&portrait=0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-						</div>
-						
-					</div>
-					
-    				</div>
-				</li>	
-		<li ><a  href="404.html">Blog</a></li>				
-				<li><a  href="#">Products</a>
-				<div class="megapanel">
-					<div class="row">
-						<div class=" col-nav">
-							<div class="h_nav">
-								<h4>BEST SELLING</h4>
-								<div class="sell">
-									<div class="men">
-										<a href="product.html"><img src="images/pi.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6>Lorem Ipsum</h6>
-										<span>$.60.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.html"><img src="images/pi11.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6> Dummy Text</h6>
-										<span>$.160.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.html"><img src="images/pi12.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6>Standard Chunk</h6>
-										<span>$.80.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-							</div>							
-						</div>
-						<div class=" col-nav">
-							<div class="h_nav">
-								<h4>TOP RATE</h4>
-								<div class="sell">
-									<div class="men">
-									<a href="product.html"><img src="images/pi13.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6> Perspiciatis Und</h6>
-										<span>$.90.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.html"><img src="images/pi.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6>Veritatis Et</h6>
-										<span>$.60.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.html"><img src="images/pi11.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6>Lorem Ipsum</h6>
-										<span>$.100.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-							</div>							
-						</div>
-					</div>
-    				</div>
-				</li>
-				
-				<li><a  href="contact.html">Contact</a>
-					
-				</li>
-		 </ul> 
-		 <!---->
-		 <div class="search-in" >
-			<div class="search" >
-						<form action="search.html">
-							<input type="text" value="Keywords" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Keywords';}" class="text">
-							<input type="submit" value="SEARCH">
-						</form>
-							<div class="close-in"><img src="images/close.png" alt="" /></div>
-					</div>
-						<div class="right"><button> </button></div>
-				</div>
-						<script type="text/javascript">
-							$('.search').hide();
-							$('button').click(function (){
-							$('.search').show();
-							$('.text').focus();
-							}
-							);
-							$('.close-in').click(function(){
-							$('.search').hide();
-							});
-						</script>
-
-					<!---->
-					<div class="cart box_1">
-						<a href="checkout.html">
-						<h3> <div class="total">
-							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>
-					<!---->
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		</div>
-		
-	</div>
+<!--header-->
+<div th:include="fragments :: navbar"></div>
 <!---->
 <div class="container">
 	<h6 class="dress"><a href="index.html">Home</a> <i> </i> Lorem Ipsum </h6>
@@ -699,17 +518,17 @@ sed diam nonummy nibh euismod</p>
 			<div class="col-md-4 footer-top">
 				<h3>QUICK CONTACT</h3>
 				<form>
-						
+
 						<input type="text" value="ENTER YOUR NAME*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
-						
+
 						<input type="text" value="ENTER YOUR EMAIL*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
-						
+
 						<input type="text" value="ENTER YOUR PHONE" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
-					
+
 						<textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
-						
+
 							<input type="submit" value="SEND MESSAGE" >
-						
+
 					</form>
 
 			</div>
@@ -778,8 +597,8 @@ sed diam nonummy nibh euismod</p>
 					</div>
 					<div class="logo-the">
 						<h4>Amberegul Theme</h4>
-						<p>Was designed for opencart, magento, 
-woocommerce and prestashop platforms. 
+						<p>Was designed for opencart, magento,
+woocommerce and prestashop platforms.
 It is based on Bootstrap.</p>
 					</div>
 					<div class="clearfix"> </div>
@@ -796,7 +615,7 @@ It is based on Bootstrap.</p>
 					</div>
 			</div>
 			<div class="clearfix"> </div>
-			<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+			<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="blog" target="_blank" title="丶CyanBean">丶CyanBean</a> - Collect from <a href="blog" title="丶CyanBean" target="_blank">丶CyanBean</a></p>
 		</div>
 	</div>
 <!---->

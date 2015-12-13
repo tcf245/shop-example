@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import shop.configuration.Type;
 import shop.domain.Goods;
+import shop.domain.Guest;
 import shop.service.GoodsService;
 
 import javax.servlet.http.HttpSession;
@@ -46,11 +47,40 @@ public class GoodsController {
         return "single";
     }
 
-    @RequestMapping(value = "/addGoods")
-    public String goodsForm(Model model){
-        model.addAttribute("goods",new Goods());
-        return "create";
+    @RequestMapping("/women")
+    public String women(Model model){
+        model.addAttribute("list",goodsService.findByType(Type.WOMEN));
+        return "product";
     }
+
+    @RequestMapping("/men")
+    public String men(Model model){
+        model.addAttribute("list",goodsService.findByType(Type.MEN));
+        return "product";
+    }
+
+    @RequestMapping("/shoes")
+    public String shoes(Model model){
+        model.addAttribute("list",goodsService.findByType(Type.SHOES));
+        return "product";
+    }
+
+    @RequestMapping(value = "/search",method = RequestMethod.POST)
+    public String search(Model model,@RequestParam("keyWords")String keyWords){
+        model.addAttribute("list",goodsService.search(keyWords));
+        return "product";
+    }
+
+    @RequestMapping(value = "/addGoods")
+    public String goodsForm(Model model,HttpSession session){
+        Guest guest = (Guest) session.getAttribute("guest");
+        if(guest.isManager()) {
+            model.addAttribute("goods", new Goods());
+            return "create";
+        }
+        return "index";
+    }
+
     @RequestMapping(value = "/saveGoods",method = RequestMethod.POST)
     public String saveGoods(@ModelAttribute("goods") Goods goods, @RequestParam("picture")MultipartFile image, HttpSession session) throws Exception {
 

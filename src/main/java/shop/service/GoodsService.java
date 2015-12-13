@@ -31,4 +31,8 @@ public class GoodsService {
        return  goodsDao.findById(id);
     }
 
+    public List<Goods> search(String keyWords){
+        return goodsDao.findByKeyWords(keyWords);
+    }
+
 }

@@ -36,4 +36,7 @@ public class GoodsDao {
         return list.isEmpty() ? null : list.get(0);
     }
 
+    public List<Goods> findByKeyWords(String keyWords){
+        return (List<Goods>) template.find("from Goods where goodsName like ?","%" + keyWords + "%");
+    }
 }

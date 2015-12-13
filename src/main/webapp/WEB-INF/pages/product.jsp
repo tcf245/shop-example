@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="/WEB-INF/pages/fragments.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,198 +36,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header-->
-<div class=" header-product">
-    <div class="header-top com">
-        <div class="container">
-            <div class="header-top-in grid-1">
-                <ul class="support">
-                    <li><a href="mailto:info@example.com"><i> </i>info@example.com</a></li>
-                    <li><span><i class="tele-in"> </i>0 462 261 61 61</span></li>
-                </ul>
-                <ul class=" support-right">
-                    <li><a href="account.html"><i class="men"> </i>Login</a></li>
-                    <li><a href="account.html"><i class="tele"> </i>Create an Account</a></li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="header-bottom bottom-com">
-            <div class="container">
-                <div class="logo">
-                    <h1><a href="index.html">Amberegul</a></h1>
-                </div>
-                <div class="top-nav">
-                    <!-- start header menu -->
-                    <ul class="megamenu skyblue menu-in">
-                        <li><a href="index.html">Home</a></li>
-
-                        <li class="active grid"><a href="#">Pages</a>
-                            <div class="megapanel">
-                                <div class="row">
-                                    <div class="col1">
-                                        <div class="h_nav">
-                                            <h4>SUBMENU1</h4>
-                                            <ul>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="product.html">men</a></li>
-                                                <li><a href="product.html">women</a></li>
-                                                <li><a href="product.html">accessories</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col1">
-                                        <div class="h_nav">
-                                            <h4>SUBMENU2</h4>
-                                            <ul>
-                                                <li><a href="product.html">trends</a></li>
-                                                <li><a href="product.html">sale</a></li>
-                                                <li><a href="product.html">style videos</a></li>
-                                                <li><a href="product.html">accessories</a></li>
-                                                <li><a href="product.html">kids</a></li>
-                                                <li><a href="product.html">style videos</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col1 col5">
-                                        <iframe src="https://player.vimeo.com/video/10777111?color=ffffff&title=0&byline=0&portrait=0"
-                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-                        <li><a href="404.html">Blog</a></li>
-                        <li><a href="#">Products</a>
-                            <div class="megapanel">
-                                <div class="row">
-                                    <div class=" col-nav">
-                                        <div class="h_nav">
-                                            <h4>BEST SELLING</h4>
-                                            <div class="sell">
-                                                <div class="men">
-                                                    <a href="product.html"><img src="images/pi.jpg" alt=""></a>
-                                                </div>
-                                                <div class="men-in">
-                                                    <h6>Lorem Ipsum</h6>
-                                                    <span>$.60.00</span>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="sell">
-                                                <div class="men">
-                                                    <a href="product.html"><img src="images/pi11.jpg" alt=""></a>
-                                                </div>
-                                                <div class="men-in">
-                                                    <h6> Dummy Text</h6>
-                                                    <span>$.160.00</span>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="sell">
-                                                <div class="men">
-                                                    <a href="product.html"><img src="images/pi12.jpg" alt=""></a>
-                                                </div>
-                                                <div class="men-in">
-                                                    <h6>Standard Chunk</h6>
-                                                    <span>$.80.00</span>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class=" col-nav">
-                                        <div class="h_nav">
-                                            <h4>TOP RATE</h4>
-                                            <div class="sell">
-                                                <div class="men">
-                                                    <a href="product.html"><img src="images/pi13.jpg" alt=""></a>
-                                                </div>
-                                                <div class="men-in">
-                                                    <h6> Perspiciatis Und</h6>
-                                                    <span>$.90.00</span>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="sell">
-                                                <div class="men">
-                                                    <a href="product.html"><img src="images/pi.jpg" alt=""></a>
-                                                </div>
-                                                <div class="men-in">
-                                                    <h6>Veritatis Et</h6>
-                                                    <span>$.60.00</span>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="sell">
-                                                <div class="men">
-                                                    <a href="product.html"><img src="images/pi11.jpg" alt=""></a>
-                                                </div>
-                                                <div class="men-in">
-                                                    <h6>Lorem Ipsum</h6>
-                                                    <span>$.100.00</span>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li><a href="contact.html">Contact</a>
-
-                        </li>
-                    </ul>
-                    <!---->
-                    <div class="search-in">
-                        <div class="search">
-                            <form action="search.html">
-                                <input type="text" value="Keywords" onfocus="this.value = '';"
-                                       onblur="if (this.value == '') {this.value = 'Keywords';}" class="text">
-                                <input type="submit" value="SEARCH">
-                            </form>
-                            <div class="close-in"><img src="images/close.png" alt=""/></div>
-                        </div>
-                        <div class="right">
-                            <button></button>
-                        </div>
-                    </div>
-                    <script type="text/javascript">
-                        $('.search').hide();
-                        $('button').click(function () {
-                                    $('.search').show();
-                                    $('.text').focus();
-                                }
-                        );
-                        $('.close-in').click(function () {
-                            $('.search').hide();
-                        });
-                    </script>
-
-                    <!---->
-                    <div class="cart box_1">
-                        <a href="checkout.html">
-                            <h3>
-                                <div class="total">
-                                    <span class="simpleCart_total"></span> (<span id="simpleCart_quantity"
-                                                                                  class="simpleCart_quantity"></span>
-                                    items)
-                                </div>
-                                <img src="images/cart.png" alt=""/></h3>
-                        </a>
-                        <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                        <div class="clearfix"></div>
-                    </div>
-                    <!---->
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-
-</div>
 <!---->
 <div class="container">
     <h6 class="dress"><a href="index.html">Home</a> <i> </i> Dress &amp; T-shirt </h6>
@@ -254,7 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </a></li>
 
                 </ul>
-                <a class="go" href="single.html">GO</a>
+                <a class="go" href="products">GO</a>
                 <div class="clearfix"></div>
                 <!---->
                 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
@@ -286,32 +95,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h3 class="cate">CATEGORIES</h3>
                 </div>
                 <ul class="menu">
-                    <li class="item1"><a href="#">Men </a>
+                    <li class="item1"><a href="men">Men </a>
                         <ul class="cute">
-                            <li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-                            <li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-                            <li class="subitem3"><a href="single.html">Automatic Fails </a></li>
+                            <li class="subitem1"><a href="priducts">Cute Kittens </a></li>
+                            <li class="subitem2"><a href="priducts">Strange Stuff </a></li>
+                            <li class="subitem3"><a href="priducts">Automatic Fails </a></li>
                         </ul>
                     </li>
-                    <li class="item2"><a href="#">Women </a>
+                    <li class="item2"><a href="women">Women </a>
                         <ul class="cute">
-                            <li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-                            <li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-                            <li class="subitem3"><a href="single.html">Automatic Fails </a></li>
+                            <li class="subitem1"><a href="1">Cute Kittens </a></li>
+                            <li class="subitem2"><a href="1">Strange Stuff </a></li>
+                            <li class="subitem3"><a href="1">Automatic Fails </a></li>
                         </ul>
                     </li>
-                    <li class="item3"><a href="#">Kids</a>
+                    <li class="item3"><a href="men">Kids</a>
                         <ul class="cute">
-                            <li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-                            <li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-                            <li class="subitem3"><a href="single.html">Automatic Fails</a></li>
-                        </ul>
-                    </li>
-                    <li class="item4"><a href="#">Accesories</a>
-                        <ul class="cute">
-                            <li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-                            <li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-                            <li class="subitem3"><a href="single.html">Automatic Fails</a></li>
+                            <li class="subitem1"><a href="priducts">Cute Kittens </a></li>
+                            <li class="subitem2"><a href="priducts">Strange Stuff </a></li>
+                            <li class="subitem3"><a href="priducts">Automatic Fails</a></li>
                         </ul>
                     </li>
 
@@ -464,48 +266,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="product-right-top">
                 <div class="top-product">
 
-                    <%--<c:forEach items="${list}" var="goods" >--%>
-                    <%--<div class="img-top simpleCart_shelfItem">--%>
-
-                    <%--<img src="${goods.image}" class="img-responsive" alt=""/>--%>
-
-                    <%--<div class="tab_desc">--%>
-                    <%--<ul class="round-top">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i class="round"> </i></a></li>--%>
-                    <%--</ul>--%>
-
-                    <%--<div class="agency ">--%>
-                    <%--<div class="agency-left">--%>
-                    <%--<h6 class="jean" th:value="${goods.goodsName}">BAJU JEANS</h6>--%>
-                    <%--<span class="dollor item_price" th:value="${goods.price}">$50.00</span>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="agency-right">--%>
-                    <%--<ul class="social">--%>
-                    <%--<li><a href="#"><i class="item_add"> </i></a></li>--%>
-                    <%--<li><a href="#"><i class="text"> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--<ul class="social-in">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i > </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i > </i></a></li>--%>
-                    <%--<li><a href="#"><i > </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-
-                    <%--</div>--%>
-                    <%--</c:forEach>--%>
-
-
                     <c:forEach items="${list}" var="goods">
                         <div class="col-md-4 chain-grid  simpleCart_shelfItem">
                             <div class="grid-span-1">
-                                <a href="single.html"><img class="img-responsive " src="${goods.image}" alt=" ">
+                                <a href="${goods.id}"><img class="img-responsive " src="${goods.image}" alt=" ">
                                     <div class="link">
                                         <ul>
                                             <li><i> </i></li>
@@ -516,7 +280,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </a>
                             </div>
                             <div class="grid-chain-bottom ">
-                                <h6><a href="product/${goods.id}" >${goods.goodsName}</a></h6>
+                                <h6><a href="${goods.id}" >${goods.goodsName}</a></h6>
                                 <div class="star-price">
                                     <div class="price-at">
                                         <ul class="star-footer">
@@ -533,305 +297,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="cart-add">
-                                    <a class="add1 item_add" href="#">ADD TO CART <i> </i></a>
+                                    <a class="add1 item_add" href="addToCart/${goods.id}">ADD TO CART <i> </i></a>
                                     <a class="add2" href="#"><i> </i></a>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-
                         </div>
                     </c:forEach>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr1.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr2.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="top-product">--%>
-                    <%----%>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr7.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div><span>NEW</span></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%----%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr4.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr5.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="top-product">--%>
-                    <%----%>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr6.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div><span>NEW</span></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr7.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<span>NEW</span></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<div class="col-md-4 chain-grid simpleCart_shelfItem">--%>
-                    <%--<div class="grid-span-1">--%>
-                    <%--<a href="single.html"><img class="img-responsive " src="images/pr.jpg" alt=" ">--%>
-                    <%--<div class="link">--%>
-                    <%--<ul >--%>
-                    <%--<li><i> </i></li>--%>
-                    <%--<li><i class="white1"> </i></li>--%>
-                    <%----%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<span>NEW</span></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="grid-chain-bottom ">--%>
-                    <%--<h6><a href="single.html">WOO JACKET #1</a></h6>--%>
-                    <%--<div class="star-price">--%>
-                    <%--<div class="price-at">--%>
-                    <%--<ul class="star-footer">--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--<li><a href="#"><i> </i></a></li>--%>
-                    <%--</ul>--%>
-                    <%--</div>--%>
-                    <%--<div class="price-at-bottom ">--%>
-                    <%--<span class="item_price">$ 75.00</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--<div class="cart-add">--%>
-                    <%--<a class="add1 item_add" href="#">ADD TO CART <i> </i></a>--%>
-                    <%--<a class="add2" href="#"><i> </i></a>--%>
-                    <%--<div class="clearfix"> </div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
-                    <%--</div>--%>
+
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -1014,9 +487,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="clearfix"></div>
-        <p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a
-                href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a
-                href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+        <p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="blog" target="_blank" title="丶CyanBean">丶CyanBean</a> - Collect from <a href="blog" title="丶CyanBean" target="_blank">丶CyanBean</a></p>
     </div>
 </div>
 <!---->

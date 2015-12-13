@@ -3,6 +3,7 @@ package shop.domain;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by pc9507 on 2015/12/12.
@@ -20,6 +21,6 @@ public class Order {
 //
 //    private Guest whoCreated;
 //
-//    private List<Goods> goods;
+//    private List<Map<Goods,Integer>> orderItem;
 
 }

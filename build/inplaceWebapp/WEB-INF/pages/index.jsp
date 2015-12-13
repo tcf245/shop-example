@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body> 
-<!--header-->	
+<!--header-->
 <div class="header">
 	<div class="header-top">
 		<div class="container">
@@ -51,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<ul class="support">
 					<li ><a href="mailto:info@example.com" ><i > </i>info@example.com</a></li>
-					<li ><span ><i class="tele-in"> </i>0 462 261 61 61</span></li>			
+					<li ><span ><i class="tele-in"> </i>0 462 261 61 61</span></li>
 				</ul>
 				<ul class=" support-right">
 					<c:if test="${guest != null}" >
@@ -66,202 +66,198 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</c:if>
 
 					<c:if test="${guest == null}" >
-					<li ><a href="login" ><i class="men"> </i>Login</a></li>
-					<li ><a href="register" ><i class="tele"> </i>Create an Account</a></li>
+						<li ><a href="login" ><i class="men"> </i>Login</a></li>
+						<li ><a href="register" ><i class="tele"> </i>Create an Account</a></li>
 					</c:if>
-
 
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
-			</div>
-			<div class="header-bottom">
-			<div class="container">			
+		</div>
+		<div class="header-bottom">
+			<div class="container">
 				<div class="logo">
 					<h1><a href="index.jsp">Amberegul</a></h1>
 				</div>
 				<div class="top-nav">
-				<!-- start header menu -->
-		<ul class="megamenu skyblue">
-			<li><a  href="index.jsp">Home</a></li>
-			
-			<li class="active grid"><a  href="#">Pages</a>
-				<div class="megapanel">
-					<div class="row">
-						<div class="col1">
-							<div class="h_nav">
-								<h4>SUBMENU1</h4>
-								<ul>
-									<li><a href="about.jsp">About</a></li>
-									<li><a href="product.jsp">men</a></li>
-									<li><a href="product.jsp">women</a></li>
-									<li><a href="product.jsp">accessories</a></li>
-									
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>SUBMENU2</h4>
-								<ul>
-									<li><a href="product.jsp">trends</a></li>
-									<li><a href="product.jsp">sale</a></li>
-									<li><a href="product.jsp">style videos</a></li>
-									<li><a href="product.jsp">accessories</a></li>
-									<li><a href="product.jsp">kids</a></li>
-									<li><a href="product.jsp">style videos</a></li>
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1 col5">
-							<iframe src="https://player.vimeo.com/video/10777111?color=ffffff&title=0&byline=0&portrait=0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-						</div>
-						
-					</div>
-					
-    				</div>
-				</li>	
-		<li ><a  href="404.jsp">Blog</a></li>
-				<li><a  href="products">Products</a>
-				<div class="megapanel">
-					<div class="row">
-						<div class=" col-nav">
-							<div class="h_nav">
-								<h4>BEST SELLING</h4>
-								<div class="sell">
-									<div class="men">
-										<a href="product.jsp"><img src="images/pi.jpg" alt="" ></a>
+					<!-- start header menu -->
+					<ul class="megamenu skyblue">
+						<li><a  href="index">Home</a></li>
+
+						<li class="active grid"><a  href="#">Pages</a>
+							<div class="megapanel">
+								<div class="row">
+									<div class="col1">
+										<div class="h_nav">
+											<h4>SUBMENU1</h4>
+											<ul>
+												<li><a href="about">About</a></li>
+												<li><a href="men">men</a></li>
+												<li><a href="women">women</a></li>
+
+											</ul>
+										</div>
 									</div>
-									<div class="men-in">
-										<h6>Lorem Ipsum</h6>
-										<span>$.60.00</span>
+									<div class="col1">
+										<div class="h_nav">
+											<h4>SUBMENU2</h4>
+											<ul>
+												<li><a href="women">trends</a></li>
+												<li><a href="women">sale</a></li>
+												<li><a href="women">style videos</a></li>
+												<li><a href="women">accessories</a></li>
+												<li><a href="women">kids</a></li>
+												<li><a href="women">style videos</a></li>
+											</ul>
+										</div>
 									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.jsp"><img src="images/pi11.jpg" alt="" ></a>
+									<div class="col1 col5">
+										<iframe src="https://player.vimeo.com/video/10777111?color=ffffff&title=0&byline=0&portrait=0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 									</div>
-									<div class="men-in">
-										<h6> Dummy Text</h6>
-										<span>$.160.00</span>
+
+								</div>
+
+							</div>
+						</li>
+						<li ><a  href="blog">Blog</a></li>
+						<li><a  href="products">Products</a>
+							<div class="megapanel">
+								<div class="row">
+									<div class=" col-nav">
+										<div class="h_nav">
+											<h4>BEST SELLING</h4>
+											<div class="sell">
+												<div class="men">
+													<a href="product.jsp"><img src="images/pi.jpg" alt="" ></a>
+												</div>
+												<div class="men-in">
+													<h6>Lorem Ipsum</h6>
+													<span>$.60.00</span>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="sell">
+												<div class="men">
+													<a href="product.jsp"><img src="images/pi11.jpg" alt="" ></a>
+												</div>
+												<div class="men-in">
+													<h6> Dummy Text</h6>
+													<span>$.160.00</span>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="sell">
+												<div class="men">
+													<a href="product.jsp"><img src="images/pi12.jpg" alt="" ></a>
+												</div>
+												<div class="men-in">
+													<h6>Standard Chunk</h6>
+													<span>$.80.00</span>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+										</div>
 									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.jsp"><img src="images/pi12.jpg" alt="" ></a>
+									<div class=" col-nav">
+										<div class="h_nav">
+											<h4>TOP RATE</h4>
+											<div class="sell">
+												<div class="men">
+													<a href="single"><img src="images/pi13.jpg" alt="" ></a>
+												</div>
+												<div class="men-in">
+													<h6> Perspiciatis Und</h6>
+													<span>$.90.00</span>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="sell">
+												<div class="men">
+													<a href="products"><img src="images/pi.jpg" alt="" ></a>
+												</div>
+												<div class="men-in">
+													<h6>Veritatis Et</h6>
+													<span>$.60.00</span>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="sell">
+												<div class="men">
+													<a href="products"><img src="images/pi11.jpg" alt="" ></a>
+												</div>
+												<div class="men-in">
+													<h6>Lorem Ipsum</h6>
+													<span>$.100.00</span>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+										</div>
 									</div>
-									<div class="men-in">
-										<h6>Standard Chunk</h6>
-										<span>$.80.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-							</div>							
-						</div>
-						<div class=" col-nav">
-							<div class="h_nav">
-								<h4>TOP RATE</h4>
-								<div class="sell">
-									<div class="men">
-									<a href="single"><img src="images/pi13.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6> Perspiciatis Und</h6>
-										<span>$.90.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.jsp"><img src="images/pi.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6>Veritatis Et</h6>
-										<span>$.60.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-								<div class="sell">
-									<div class="men">
-										<a href="product.jsp"><img src="images/pi11.jpg" alt="" ></a>
-									</div>
-									<div class="men-in">
-										<h6>Lorem Ipsum</h6>
-										<span>$.100.00</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>	
-							</div>							
-						</div>
-					</div>
-    				</div>
-				</li>
-				
-				<li><a  href="contact.jsp">Contact</a>
-					
-				</li>
-		 </ul> 
-		 <!---->
-         <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
-		 <div class="search-in" >
-			<div class="search" >
-						<form action="search.jsp">
-							<input type="text" value="Keywords" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Keywords';}" class="text">
-							<input type="submit" value="SEARCH">
-						</form>
+								</div>
+							</div>
+						</li>
+
+						<li><a  href="404">Contact</a>
+
+						</li>
+					</ul>
+					<!---->
+					<%--<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>--%>
+					<div class="search-in" >
+						<div class="search" >
+							<form action="search" method="post">
+								<input type="text" name="keyWords" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Keywords';}" class="text">
+								<input type="submit" value="SEARCH">
+							</form>
 							<div class="close-in"><img src="images/close.png" alt="" /></div>
-					</div>
+						</div>
 						<div class="right"><button> </button></div>
-				</div>
-						<script type="text/javascript">
+					</div>
+					<script type="text/javascript">
+						$('.search').hide();
+						$('button').click(function (){
+									$('.search').show();
+									$('.text').focus();
+								}
+						);
+						$('.close-in').click(function(){
 							$('.search').hide();
-							$('button').click(function (){
-							$('.search').show();
-							$('.text').focus();
-							}
-							);
-							$('.close-in').click(function(){
-							$('.search').hide();
-							});
-						</script>
+						});
+					</script>
 
 					<!---->
 					<div class="cart box_1">
 						<a href="initCart">
-						<h3> <div class="total">
-							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity">${guest.cart.goods.size()}</span> items)</div>
-							<img src="images/cart.png" alt=""/></h3>
+							<h3> <div class="total">
+								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity">${guest.cart.goods.size()}</span> items)</div>
+								<img src="images/cart.png" alt=""/></h3>
 						</a>
 						<p><a href="initCart" class="simpleCart_empty"> Cart</a></p>
 						<div class="clearfix"> </div>
 					</div>
-<div class="clearfix"> </div>
+					<div class="clearfix"> </div>
 					<!---->
 				</div>
-				
+
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-		</div>
-
+	</div>
 	<div class="banner">
 		<div class="banner-top">
-	         <h2>THIS IS AMBEREGUL</h2>
-	         <p>This theme for high selling <span>fashion such as
+			<h2>THIS IS AMBEREGUL</h2>
+			<p>This theme for high selling <span>fashion such as
 clothings, shoes, bags, fashion for men,
 women, accessories, etc.</span></p>
+		</div>
+		<div class="now">
+			<a class="morebtn" href="single.jsp">Explore</a>
+			<a class="morebtn at-in" href="single.html">Shop Now</a>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
 </div>
 
-	<div class="now">
-	         <a class="morebtn" href="single.jsp">Explore</a>
-	         <a class="morebtn at-in" href="single.html">Shop Now</a>
-	         <div class="clearfix"> </div>
-	         </div>
- 	</div>	
-
-</div>
 <!---->
 <div class="content">
 	<div class="container">
@@ -621,111 +617,111 @@ aliquam volutpat.</p>
 		<!---->
 </div>
 <!---->
-	<div class="footer">
-		<div class="container">
-			<div class="col-md-4 footer-top">
-				<h3>QUICK CONTACT</h3>
-				<form>
-						
-						<input type="text" value="ENTER YOUR NAME*" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
-						
-						<input type="text" value="ENTER YOUR EMAIL*" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
-						
-						<input type="text" value="ENTER YOUR PHONE" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
-					
-						<textarea cols="77" rows="6" value="" onFocus="this.value='';" onBlur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
-						
-							<input type="submit" value="SEND MESSAGE" >
-						
-					</form>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-4 footer-top">
+			<h3>QUICK CONTACT</h3>
+			<form>
 
-			</div>
-			<div class="col-md-4 footer-middle">
-				<h3>TOP RATED PRODUCTS</h3>
-					<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<ul class="star-footer">
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-								</ul>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="images/f1.jpg" alt="">
-									<p>SALE</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-								<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<ul class="star-footer">
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-								</ul>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="images/f2.jpg" alt="">
-									<p class="new1">NEW</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-								<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<ul class="star-footer">
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-								</ul>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="images/f3.jpg" alt="">
-									<p class="new1">NEW</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
+				<input type="text" value="ENTER YOUR NAME*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
 
-			</div>
-			<div class="col-md-4 footer-bottom">
-				<div class="logo-footer">
-					<div class="logo-bottom">
-						<a href="#"><img src="images/lo.png" alt=""></a>
-					</div>
-					<div class="logo-the">
-						<h4>Amberegul Theme</h4>
-						<p>Was designed for opencart, magento, 
-woocommerce and prestashop platforms. 
-It is based on Bootstrap.</p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="indo">
-				<p class="in">Bandung, Indonesia <span>40553</span></p>
-					<ul class="social-footer ">
-						<li><span><i> </i>+62 226759804 </span></li>
-						<li><span><i class="down"> </i>blithemes</span></li>
-						<li><a href="mailto:info@example.com"><i class="mes"> </i>info@example.com</a></li>
-						<li><a href="#"><i class="mes-in"> </i>http://example.com</a></li>
-					</ul>
-					<a href="#"><img src="images/pa.png" alt=""></a>
-					</div>
-			</div>
-			<div class="clearfix"> </div>
-			<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+				<input type="text" value="ENTER YOUR EMAIL*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
+
+				<input type="text" value="ENTER YOUR PHONE" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
+
+				<textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
+
+				<input type="submit" value="SEND MESSAGE" >
+
+			</form>
+
 		</div>
+		<div class="col-md-4 footer-middle">
+			<h3>TOP RATED PRODUCTS</h3>
+			<div class="product-go">
+				<div class="grid-product">
+					<h6><a href="#" >Winter Combo Style</a></h6>
+					<ul class="star-footer">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+					</ul>
+					<span class=" price-in"><small>$70.00</small> $40.00</span>
+				</div>
+				<div class="fashion">
+					<a href="#"><img class="img-responsive " src="images/f1.jpg" alt="">
+						<p>SALE</p></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="product-go">
+				<div class="grid-product">
+					<h6><a href="#" >Winter Combo Style</a></h6>
+					<ul class="star-footer">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+					</ul>
+					<span class=" price-in"><small>$70.00</small> $40.00</span>
+				</div>
+				<div class="fashion">
+					<a href="#"><img class="img-responsive " src="images/f2.jpg" alt="">
+						<p class="new1">NEW</p></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="product-go">
+				<div class="grid-product">
+					<h6><a href="#" >Winter Combo Style</a></h6>
+					<ul class="star-footer">
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+						<li><a href="#"><i> </i></a></li>
+					</ul>
+					<span class=" price-in"><small>$70.00</small> $40.00</span>
+				</div>
+				<div class="fashion">
+					<a href="#"><img class="img-responsive " src="images/f3.jpg" alt="">
+						<p class="new1">NEW</p></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+		</div>
+		<div class="col-md-4 footer-bottom">
+			<div class="logo-footer">
+				<div class="logo-bottom">
+					<a href="#"><img src="images/lo.png" alt=""></a>
+				</div>
+				<div class="logo-the">
+					<h4>Amberegul Theme</h4>
+					<p>Was designed for opencart, magento,
+						woocommerce and prestashop platforms.
+						It is based on Bootstrap.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="indo">
+				<p class="in">Bandung, Indonesia <span>40553</span></p>
+				<ul class="social-footer ">
+					<li><span><i> </i>+62 226759804 </span></li>
+					<li><span><i class="down"> </i>blithemes</span></li>
+					<li><a href="mailto:info@example.com"><i class="mes"> </i>info@example.com</a></li>
+					<li><a href="#"><i class="mes-in"> </i>http://example.com</a></li>
+				</ul>
+				<a href="#"><img src="images/pa.png" alt=""></a>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+		<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="blog/" target="_blank" title="丶CyanBean">丶CyanBean</a> - Collect from <a href="blog" title="丶CyanBean" target="_blank">丶CyanBean</a></p>
 	</div>
+</div>
 <!---->
 </body>
 </html>

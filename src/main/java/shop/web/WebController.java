@@ -9,9 +9,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class WebController {
 
-//    @RequestMapping(value = "/index")
-//    public String index(){
-//        return "index";
-//    }
+    @RequestMapping("/about")
+    public String about(){
+    return "about";
+}
 
+    @RequestMapping("/404")
+    public String error(){
+        return "404";
+    }
+
+    @RequestMapping("/blog")
+    public String blog(){
+        return "redirect:http://tcf245.github.io";
+    }
 }

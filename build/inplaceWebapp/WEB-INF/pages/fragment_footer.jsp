@@ -1,8 +1,11 @@
-<%@ include file="/WEB-INF/pages/fragments.jsp"%>
-<!DOCTYPE html>
-<html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang="zh-CN"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Create Goods</title>
+
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
@@ -10,121 +13,48 @@
     <!--theme-style-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--//theme-style-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Mihstore Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+    <meta name="keywords" content="Amberegul Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!--fonts-->
-    <link href='http://fonts.useso.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'/>
     <!--//fonts-->
     <!-- start menu -->
     <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/megamenu.js"></script>
     <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
     <!--//slider-script-->
-    <script src="js/simpleCart.min.js"> </script>
 
+    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
     <script type="text/javascript">
-        function validate_required(field,alerttxt)
-        {
-            with (field)
-            {
-                if (value==null||value=="")
-                {alert(alerttxt);return false}
-                else {return true}
-            }
-        }
-        function validate_form(thisform)
-        {
-            with (thisform)
-            {
-                if (validate_required(firstName,"firstName must be filled out!")==false)
-                {firstName.focus();return false}
-                if (validate_required(lastName,"lastName must be filled out!")==false)
-                {lastName.focus();return false}
-                if (validate_required(password,"password must be filled out!")==false)
-                {password.focus();return false}
-            }
-        }
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true   // 100% fit in a container
+            });
+        });
     </script>
+
+    <script src="js/simpleCart.min.js"> </script>
 </head>
 <body>
-<!--header-->
-<!---->
-<div class="container">
-    <h6 class="dress"><a href="index.html">Home</a> <i> </i> Create Goods </h6>
-</div>
-<div class="back">
-    <h2>CREATE GOODS</h2>
-</div>
-<!---->
-<div class="container">
-    <div class="register">
-        <h3>GOODS INFORMATION</h3>
-        <form action="saveGoods" method="post" onsubmit="return validate_form(this)" modelAttribute="goods" enctype="multipart/form-data">
-
-            <div class="mation">
-                <div>
-                    <span>Goods Name</span>
-                    <input name="goodsName" type="text">
-                </div>
-                <div >
-                    <span>Type</span>
-                    <select class="mation">
-                        <option value="0">Women</option>
-                        <option value="1">Men</option>
-                        <option value="2">Shoes</option>
-                    </select>
-
-                    <span>Image</span>
-                    <input name="picture" type="file" class="mation">
-                </div>
-                <div>
-                    <span>Price</span>
-                    <input name="price" type="text">
-                </div>
-                <div>
-                    <span>count</span>
-                    <input name="content" type="text">
-                </div>
-                <div>
-                    <span>Content</span>
-                    <textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'ENTER GOODS CONTENT';}">ENTER YOUR MESSAGE*</textarea>
-                </div>
-
-
-            </div>
-            <input type="submit" value="submit">
-        </form>
-
-
-    </div>
-</div>
-<!---->
-<div class="bottom-grid1">
-
-    <div class="fit1">
-        <h3>HAPPY SHOPPING</h3>
-        <p>Lorem Ipsum sit amet consectuer adipiscing elit
-            sed diam nonummy nibh euismod</p>
-    </div>
-</div>
-<!---->
 <div class="footer">
     <div class="container">
         <div class="col-md-4 footer-top">
             <h3>QUICK CONTACT</h3>
             <form>
 
-                <input type="text" value="ENTER YOUR NAME*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
+                <input type="text" value="ENTER YOUR NAME*" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
 
-                <input type="text" value="ENTER YOUR EMAIL*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
+                <input type="text" value="ENTER YOUR EMAIL*" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
 
-                <input type="text" value="ENTER YOUR PHONE" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
+                <input type="text" value="ENTER YOUR PHONE" onFocus="this.value='';" onBlur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
 
-                <textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
+                <textarea cols="77" rows="6" value="" onFocus="this.value='';" onBlur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
 
                 <input type="submit" value="SEND MESSAGE" >
 
@@ -214,9 +144,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <div class="clearfix"> </div>
-        <p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="blog" target="_blank" title="丶CyanBean">丶CyanBean</a> - Collect from <a href="blog" title="丶CyanBean" target="_blank">丶CyanBean</a></p>
-          </div>
+        <p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+    </div>
 </div>
-<!---->
 </body>
 </html>
