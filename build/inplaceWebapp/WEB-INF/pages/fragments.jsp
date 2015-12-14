@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="header-bottom bottom-com">
                 <div class="container">
                     <div class="logo">
-                        <h1><a href="index.jsp">Amberegul</a></h1>
+                        <h1><a href="index">CyanBean</a></h1>
                     </div>
                     <div class="top-nav">
                         <!-- start header menu -->

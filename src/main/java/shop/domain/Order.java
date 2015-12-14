@@ -19,8 +19,49 @@ public class Order {
 //
 //    private int status;
 //
+//    @ManyToOne()
 //    private Guest whoCreated;
 //
-//    private List<Map<Goods,Integer>> orderItem;
-
+//    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+//    private List<OrderItem> orderItem;
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+//
+//    public Date getWhenCreated() {
+//        return whenCreated;
+//    }
+//
+//    public void setWhenCreated(Date whenCreated) {
+//        this.whenCreated = whenCreated;
+//    }
+//
+//    public int getStatus() {
+//        return status;
+//    }
+//
+//    public void setStatus(int status) {
+//        this.status = status;
+//    }
+//
+//    public Guest getWhoCreated() {
+//        return whoCreated;
+//    }
+//
+//    public void setWhoCreated(Guest whoCreated) {
+//        this.whoCreated = whoCreated;
+//    }
+//
+//    public List<OrderItem> getOrderItem() {
+//        return orderItem;
+//    }
+//
+//    public void setOrderItem(List<OrderItem> orderItem) {
+//        this.orderItem = orderItem;
+//    }
 }

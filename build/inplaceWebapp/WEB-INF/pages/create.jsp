@@ -72,10 +72,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div >
                     <span>Type</span>
-                    <select class="mation">
-                        <option value="0">Women</option>
-                        <option value="1">Men</option>
-                        <option value="2">Shoes</option>
+                    <select name="type" class="mation">
+                        <option name="type" value="0">Women</option>
+                        <option name="type" value="1">Men</option>
+                        <option name="type" value="2">Shoes</option>
                     </select>
 
                     <span>Image</span>

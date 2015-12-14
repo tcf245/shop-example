@@ -77,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="index.jsp">Amberegul</a></h1>
+					<h1><a href="index">CyanBean</a></h1>
 				</div>
 				<div class="top-nav">
 					<!-- start header menu -->
@@ -321,8 +321,8 @@ women, accessories, etc.</span></p>
 
 												<div class="agency ">
 													<div class="agency-left">
-														<h6 class="jean" th:value="${goods.goodsName}">BAJU JEANS</h6>
-														<span class="dollor item_price" th:value="${goods.price}">$50.00</span>
+														<h6 class="jean" >${goods.goodsName}</h6>
+														<span class="dollor item_price" >$ ${goods.price}</span>
 														<div class="clearfix"> </div>
 													</div>
 													<div class="agency-right">
@@ -366,8 +366,8 @@ women, accessories, etc.</span></p>
 
 													<div class="agency ">
 														<div class="agency-left">
-															<h6 class="jean" th:value="${goods.goodsName}">BAJU JEANS</h6>
-															<span class="dollor item_price" th:value="${goods.price}">$50.00</span>
+															<h6 class="jean" >${goods.goodsName}</h6>
+															<span class="dollor item_price" >$ ${goods.price}</span>
 															<div class="clearfix"> </div>
 														</div>
 														<div class="agency-right">
@@ -411,8 +411,8 @@ women, accessories, etc.</span></p>
 
 													<div class="agency ">
 														<div class="agency-left">
-															<h6 class="jean" th:value="${goods.goodsName}">BAJU JEANS</h6>
-															<span class="dollor item_price" th:value="${goods.price}">$50.00</span>
+															<h6 class="jean">${goods.goodsName}</h6>
+															<span class="dollor item_price">$  ${goods.price}</span>
 															<div class="clearfix"> </div>
 														</div>
 														<div class="agency-right">

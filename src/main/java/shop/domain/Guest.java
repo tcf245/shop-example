@@ -16,6 +16,10 @@ public class Guest {
     private String email;
     private String password;
     private boolean manager;
+//
+//    @Column(nullable = true)
+//    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+//    private Order order;
 
     @OneToOne(fetch = FetchType.EAGER)
     private Cart cart;
