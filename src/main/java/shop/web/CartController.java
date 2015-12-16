@@ -48,4 +48,33 @@ public class CartController {
         }
         return "redirect:/login";
     }
+
+    @RequestMapping("/delete/{id}")
+    public String deleteOne(@PathVariable("id")int id,HttpSession session){
+        Guest guest = (Guest) session.getAttribute("guest");
+        Cart cart = guest.getCart();
+        List<Goods> list = cart.getGoods();
+
+        for (Goods g:list){
+            if (g.getId()==id){
+                list.remove(g);
+            }
+            break;
+        }
+        cart.setGoods(list);
+        cartService.updateCart(cart);
+        return "redirect:/initCart";
+    }
+
+    @RequestMapping("/deleteAll")
+    public String deleteAll(HttpSession session){
+        Guest guest = (Guest) session.getAttribute("guest");
+        Cart cart = guest.getCart();
+        List<Goods> list = cart.getGoods();
+        list.clear();
+        cart.setGoods(list);
+        cartService.updateCart(cart);
+        return "redirect:/initCart";
+    }
+
 }

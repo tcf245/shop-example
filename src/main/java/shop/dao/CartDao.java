@@ -4,6 +4,7 @@ import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.transaction.annotation.Transactional;
 import shop.domain.Cart;
 import shop.domain.Goods;
+import shop.domain.Guest;
 
 import java.util.List;
 
@@ -26,5 +27,9 @@ public class CartDao {
     }
     public void update(Cart cart){
         template.update(cart);
+    }
+    public void deleteOne(Cart cart,int id){
+        String sql="delete from cart_goods where cart_id ='"+ cart.getId() +"' and goods_id = '"+ id +"'";
+        template.getSessionFactory().getCurrentSession().createCriteria(sql);
     }
 }
