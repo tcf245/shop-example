@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</c:if>
 
 						<li ><a href="addGoods" ><i class="tele"> </i>Create Goods</a></li>
-						<li ><a href="login" ><i class="men"> </i>${guest.email}</a></li>
+						<li ><a href="initCart" ><i class="men"> </i>${guest.email}</a></li>
 						<li ><a href="logout" ><i class="tele"> </i>Logout</a></li>
 
 					</c:if>
@@ -467,7 +467,7 @@ it’s really how it works.</p>
 						<article style="position: absolute; width: 100%; opacity: 0;"> 
 					  			<div class="blog-in-top">
 								<div class="col-md-6 van">
-								<a href="single.html"> <img src="images/bl.jpg" class="img-responsive" alt=""/></a>
+								<a href="products"> <img src="images/bl.jpg" class="img-responsive" alt=""/></a>
 								</div>
 								<div class="col-md-6 on-para">
 									<div class="col-on">
@@ -477,7 +477,7 @@ it’s really how it works.</p>
 									<p>Lorem ipsum dolor sit <span>amet, consectetuer adipiscing elit, 
 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
 magna aliquam erat volutpat ....</span></p>
-<a href="single.html" class="sed">Readmore</a>
+<a href="products" class="sed">Readmore</a>
 <div class="clearfix"> </div>
 								</div>	
 							<div class="clearfix"> </div>
@@ -495,7 +495,7 @@ magna aliquam erat volutpat ....</span></p>
 									<p>Lorem ipsum dolor sit <span>amet, consectetuer adipiscing elit, 
 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
 magna aliquam erat volutpat ....</span></p>
-<a href="single.html" class="sed">Readmore</a>
+<a href="products" class="sed">Readmore</a>
 <div class="clearfix"> </div>
 								</div>	
 							<div class="clearfix"> </div>
@@ -504,7 +504,7 @@ magna aliquam erat volutpat ....</span></p>
 						<article style="position: absolute; width: 100%; opacity: 0;"> 
 					  			<div class="blog-in-top">
 								<div class="col-md-6 van">
-								<a href="single.html"> <img src="images/bl2.jpg" class="img-responsive" alt=""/></a>
+								<a href="products"> <img src="images/bl2.jpg" class="img-responsive" alt=""/></a>
 								</div>
 								<div class="col-md-6 on-para">
 									<div class="col-on">
@@ -514,7 +514,7 @@ magna aliquam erat volutpat ....</span></p>
 									<p>Lorem ipsum dolor sit <span>amet, consectetuer adipiscing elit, 
 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
 magna aliquam erat volutpat ....</span></p>
-<a href="single.html" class="sed">Readmore</a>
+<a href="products" class="sed">Readmore</a>
 <div class="clearfix"> </div>
 								</div>	
 							<div class="clearfix"> </div>
@@ -532,7 +532,7 @@ magna aliquam erat volutpat ....</span></p>
 									<p>Lorem ipsum dolor sit <span>amet, consectetuer adipiscing elit, 
 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
 magna aliquam erat volutpat ....</span></p>
-<a href="single.html" class="sed">Readmore</a>
+<a href="products" class="sed">Readmore</a>
 <div class="clearfix"> </div>
 								</div>	
 							<div class="clearfix"> </div>
@@ -541,7 +541,7 @@ magna aliquam erat volutpat ....</span></p>
 						<article style="position: absolute; width: 100%; opacity: 0;"> 
 				   				<div class="blog-in-top">
 								<div class="col-md-6 van">
-								<a href="single.html"> <img src="images/bl.jpg" class="img-responsive" alt=""/></a>
+								<a href="products"> <img src="images/bl.jpg" class="img-responsive" alt=""/></a>
 								</div>
 								<div class="col-md-6 on-para">
 									<div class="col-on">
@@ -551,7 +551,7 @@ magna aliquam erat volutpat ....</span></p>
 									<p>Lorem ipsum dolor sit <span>amet, consectetuer adipiscing elit, 
 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
 magna aliquam erat volutpat ....</span></p>
-<a href="single.html" class="sed">Readmore</a>
+<a href="products" class="sed">Readmore</a>
 <div class="clearfix"> </div>
 								</div>	
 							<div class="clearfix"> </div>
@@ -569,7 +569,7 @@ magna aliquam erat volutpat ....</span></p>
 									<p>Lorem ipsum dolor sit <span>amet, consectetuer adipiscing elit, 
 sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
 magna aliquam erat volutpat ....</span></p>
-<a href="single.html" class="sed">Readmore</a>
+<a href="products" class="sed">Readmore</a>
 <div class="clearfix"> </div>
 								</div>	
 							<div class="clearfix"> </div>
@@ -588,7 +588,7 @@ magna aliquam erat volutpat ....</span></p>
 						</div>
 						<div class="col-md-4 amet">
 							<div class="grid-per">
-							<a href="single.html"><img class="img-responsive" src="images/bl1.jpg" alt="">
+							<a href="products"><img class="img-responsive" src="images/bl1.jpg" alt="">
 							<div class="six-per">
 					<h4>Get up to</h4>
 					<span>60%</span>

@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </c:if>
 
                             <li ><a href="addGoods" ><i class="tele"> </i>Create Goods</a></li>
-                            <li ><a href="login" ><i class="men"> </i>${guest.email}</a></li>
+                            <li ><a href="initCart" ><i class="men"> </i>${guest.email}</a></li>
                             <li ><a href="logout" ><i class="tele"> </i>Logout</a></li>
 
                         </c:if>
