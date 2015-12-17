@@ -251,8 +251,8 @@ clothings, shoes, bags, fashion for men,
 women, accessories, etc.</span></p>
 		</div>
 		<div class="now">
-			<a class="morebtn" href="single.jsp">Explore</a>
-			<a class="morebtn at-in" href="single.html">Shop Now</a>
+			<a class="morebtn" href="products">Explore</a>
+			<a class="morebtn at-in" href="products">Shop Now</a>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
@@ -265,13 +265,13 @@ women, accessories, etc.</span></p>
 			<div class="col-md-9">
 				<div class="col-top">
 					<div class="col-md-6 black">
-						<a href="single.html"><div class="shoe" >
+						<a href="products"><div class="shoe" >
 							<h3>WOMEN SHOES</h3>
 						</div>
 						<img src="images/sh.png" alt="" ></a>
 					</div>
 					<div class="col-md-6 black-in">
-						<a href="single.html"><div class="shoe bag" >
+						<a href="products"><div class="shoe bag" >
 							<h3>WOMEN BAGS</h3>
 						</div>
 						<img src="images/ba.png" alt="" ></a>
@@ -280,7 +280,7 @@ women, accessories, etc.</span></p>
 				</div>
 				<div class="col-top-bottom">
 					<h3 class="menber">MEMBER DISCOUNT</h3>
-					<a href="single.html" class="now-in">SHOP NOW</a>
+					<a href="products" class="now-in">SHOP NOW</a>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
@@ -360,8 +360,8 @@ women, accessories, etc.</span></p>
 
 												<div class="tab_desc">
 													<ul class="round-top">
-														<li><a href="#"><i> </i></a></li>
-														<li><a href="#"><i class="round"> </i></a></li>
+														<li><a href="${goods.id}"><i> </i></a></li>
+														<li><a href="${goods.id}"><i class="round"> </i></a></li>
 													</ul>
 
 													<div class="agency ">
@@ -405,8 +405,8 @@ women, accessories, etc.</span></p>
 
 												<div class="tab_desc">
 													<ul class="round-top">
-														<li><a href="#"><i> </i></a></li>
-														<li><a href="#"><i class="round"> </i></a></li>
+														<li><a href="${goods.id}"><i> </i></a></li>
+														<li><a href="${goods.id}"><i class="round"> </i></a></li>
 													</ul>
 
 													<div class="agency ">

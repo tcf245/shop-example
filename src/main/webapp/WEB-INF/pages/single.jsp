@@ -249,12 +249,12 @@ amet consectetuer </a></h6>
 								</a>
 							</li>
 							<li>
-								<img class="etalage_thumb_image img-responsive" src="images/si2.jpg" alt="" >
-								<img class="etalage_source_image img-responsive" src="images/si2.jpg" alt="" >
+								<img class="etalage_thumb_image img-responsive" src="${goods.image}" alt="" >
+								<img class="etalage_source_image img-responsive" src="${goods.image}" alt="" >
 							</li>
 							<li>
-								<img class="etalage_thumb_image img-responsive" src="images/si.jpg" alt=""  >
-								<img class="etalage_source_image img-responsive" src="images/si.jpg" alt="" >
+								<img class="etalage_thumb_image img-responsive" src="${goods.image}" alt=""  >
+								<img class="etalage_source_image img-responsive" src="${goods.image}" alt="" >
 							</li>
 						    <li>
 								<img class="etalage_thumb_image img-responsive" src="images/si1.jpg"  alt="" >
@@ -608,7 +608,7 @@ It is based on Bootstrap.</p>
 					<ul class="social-footer ">
 						<li><span><i> </i>+62 226759804 </span></li>
 						<li><span><i class="down"> </i>blithemes</span></li>
-						<li><a href="mailto:info@example.com"><i class="mes"> </i>info@example.com</a></li>
+						<li><a href="ailto:info@example.com"><i class="mes"> </i>info@example.com</a></li>
 						<li><a href="#"><i class="mes-in"> </i>http://example.com</a></li>
 					</ul>
 					<a href="#"><img src="images/pa.png" alt=""></a>
